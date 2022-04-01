@@ -1,10 +1,14 @@
 import './App.css';
+import MainScreen from './components/screens/MainScreen';
 
-import SignUpPage from './components/SignUpPage';
+import SignUpPage from './components/screens/SignUpPage';
 
 function App() {
   return (
-    <SignUpPage />
+    <div>
+      {/* <SignUpPage /> */}
+      <MainScreen />
+    </div>
   )
 }
 
