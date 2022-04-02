@@ -1,0 +1,64 @@
+.postForm {
+    border: 1px solid #999999;
+    margin: 3% auto;
+    width: 70%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.postForm h3,
+.postForm div,
+.postForm button {
+    margin: 0 5%;
+}
+
+.postForm h3 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.postContent {
+    border: 1px solid #777777;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    max-height: 100px;
+}
+
+label {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+input {
+    border: 1px solid #777777;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    align-self: end;
+    width: 100px;
+    height: 33px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:disabled {
+    background-color: grey;
+    color: white;
+    box-shadow: none;
+    border: none;
+    cursor: initial;
+}

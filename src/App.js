@@ -1,6 +1,7 @@
 import './App.css';
-import MainScreen from './components/screens/MainScreen';
 
+import PostForm from './components/layout/PostForm';
+import MainScreen from './components/screens/MainScreen';
 import SignUpPage from './components/screens/SignUpPage';
 
 function App() {
