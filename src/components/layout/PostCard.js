@@ -19,7 +19,7 @@ function PostCard({ title, userName, timer, commentary }) {
                         <p>@{userName}</p>
                         <span>{timer}</span>
                     </div>
-                    <p>{commentary} Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis corrupti ducimus ut, ipsa provident vero recusandae fuga accusantium laborum veniam natus quia amet consequuntur qui minima nobis fugiat modi dolor! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora minima odit, alias neque aliquam saepe maiores quo atque! Incidunt vel cumque culpa soluta odit eius aperiam necessitatibus repudiandae beatae accusamus?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, saepe. Ipsam hic esse distinctio quibusdam deleniti aut est reiciendis modi inventore sunt, consequatur at, natus ipsa doloribus iste neque cupiditate.</p>
+                    <p>{commentary}</p>
                 </div>
             </div>
         </section>
