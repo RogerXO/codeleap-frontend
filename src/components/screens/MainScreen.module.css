@@ -2,16 +2,15 @@
     background-color: lightgrey;
     height: 100%;
     width: 100%;
-    position: absolute;
-    left: 0;
     overflow: hidden;
 }
 
 .container {
     margin: 4% auto;
     background-color: white;
-    width: 75%;
-    height: 85%;
+    width: 65%;
+    padding-bottom: 1px;
+    height: 87%;
 }
 
 .top {

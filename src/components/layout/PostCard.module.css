@@ -1,0 +1,54 @@
+section {
+    border: 1px solid #999999;
+    margin: 3% auto;
+    width: 75%;
+}
+
+.postHeader {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.postHeader h3 {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.postHeader h3,
+.postHeader div {
+    margin: 0 2%;
+}
+
+.iconsDiv {
+    display: flex;
+    gap: 20px;
+}
+
+img {
+    cursor: pointer;
+    height: 22.5px;
+}
+
+.content {
+    margin: 3% 7%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.userName {
+    color: #777777;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.userName span {
+    font-weight: 400;
+}

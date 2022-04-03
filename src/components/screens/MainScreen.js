@@ -3,20 +3,17 @@ import styles from "./MainScreen.module.css"
 import { useState } from 'react'
 
 import PostForm from "../layout/PostForm"
+import PostCard from "../layout/PostCard"
 
 function MainScreen() {
 
     return (
         <div className={styles.background}>
             <div className={styles.container}>
-                <div className={styles.top}>
-                    <h2>CodeLeap Network</h2>
-                </div>
-                <div className={styles.content}>
-                    <PostForm/>
-                </div>
+                <h2 className={styles.top}>CodeLeap Network</h2>
+                <PostForm />
+                <PostCard title="" userName="" timer="" commentary="" />
             </div>
-
         </div>
     )
 }
