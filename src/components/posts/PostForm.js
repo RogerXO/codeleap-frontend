@@ -2,16 +2,33 @@ import styles from './PostForm.module.css'
 
 import { useState } from 'react'
 
-function PostForm() {
+function PostForm({ handleSubmit }) {
     const [title, setTitle] = useState()
     const [comment, setComment] = useState()
+    const [post, setPost] = useState({})
+
 
     function handleTitle(e) {
         setTitle(e.target.value)
+        setPost({
+            ...post,
+            title: e.target.value
+        })
     }
 
     function handleComment(e) {
         setComment(e.target.value)
+        setPost({
+            ...post,
+            content: e.target.value
+        })
+    }
+
+    function submit(e) {
+        e.preventDefault()
+        handleSubmit(post)
+        setTitle('')
+        setComment('')
     }
 
     return (
@@ -25,7 +42,7 @@ function PostForm() {
                 <label htmlFor="post-content">Content</label>
                 <textarea name="post-content" id="post-content" cols="10" rows="10" placeholder='Your comment here' className={styles.postContent} value={comment} onChange={handleComment}></textarea>
             </div>
-            <button type="submit" disabled={!title || !comment}>CREATE</button>
+            <button onClick={submit} type="submit" disabled={!title || !comment}>CREATE</button>
         </div>
     )
 }
