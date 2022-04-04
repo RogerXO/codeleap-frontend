@@ -4,6 +4,12 @@ section {
     width: 75%;
 }
 
+.container {
+    border: 1px solid #999999;
+    margin: 3% auto;
+    width: 75%;
+}
+
 .postHeader {
     background-color: black;
     color: white;

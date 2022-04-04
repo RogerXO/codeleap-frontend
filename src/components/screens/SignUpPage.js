@@ -9,6 +9,8 @@ function SignUpPage() {
         setUserName(e.target.value)
     }
 
+    // fetch and pass userName
+
     return (
         <section className={styles.background}>
             <div className={styles.signup}>
