@@ -1,9 +1,7 @@
 import './App.css';
-import PostCard from './components/posts/PostCard';
 
-import PostForm from './components/posts/PostForm';
-import MainScreen from './components/screens/MainScreen';
-import SignUpPage from './components/screens/SignUpPage';
+import MainScreen from './components/pages/MainScreen';
+import SignUpPage from './components/pages/SignUpPage';
 
 function App() {
   return (

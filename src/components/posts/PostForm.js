@@ -1,8 +1,12 @@
 import styles from './PostForm.module.css'
 
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
 
-function PostForm({ handleSubmit }) {
+import { createPost } from '../redux/actions/PostSlice'
+
+function PostForm() {
+    const dispatch = useDispatch()
     const [title, setTitle] = useState()
     const [comment, setComment] = useState()
     const [post, setPost] = useState({})
@@ -20,13 +24,13 @@ function PostForm({ handleSubmit }) {
         setComment(e.target.value)
         setPost({
             ...post,
-            content: e.target.value
+            comment: e.target.value
         })
     }
 
     function submit(e) {
         e.preventDefault()
-        handleSubmit(post)
+        dispatch(createPost(post), { payload: post })
         setTitle('')
         setComment('')
     }

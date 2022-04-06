@@ -3,7 +3,7 @@ import styles from './PostCard.module.css'
 import binpng from '../../images/bin.png'
 import editpng from '../../images/edit.png'
 
-function PostCard({ id, title, userName, timer, commentary }) {
+function PostCard({ id, title, userName, timer, comment }) {
     return (
         <section key={id}>
             <div className={styles.postCard}>
@@ -17,9 +17,9 @@ function PostCard({ id, title, userName, timer, commentary }) {
                 <div className={styles.content}>
                     <div className={styles.userName}>
                         <p>@{userName ? userName : "someone else"}</p>
-                        <span>{timer}</span>
+                        <span>{timer ? timer : "x seconds ago"}</span>
                     </div>
-                    <p>{commentary}</p>
+                    <p>{comment}</p>
                 </div>
             </div>
         </section>
