@@ -21,7 +21,7 @@
 
 .signup h2,
 .signup div,
-.signup button {
+.signup .btn {
     margin: 0 4%;
 }
 
@@ -51,4 +51,11 @@ button:disabled {
     color: white;
     box-shadow: none;
     border: none;
+}
+
+.signup .btn {
+    align-self: flex-end;
+    margin-right: 6%;
+    width: 100px;
+    height: 33px;
 }

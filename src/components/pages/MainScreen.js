@@ -8,40 +8,11 @@ import PostCard from "../posts/PostCard"
 import { selectPost } from '../redux/actions/PostSlice'
 
 function MainScreen() {
-    // - Create a timer when create post
+    // - get the api data
     // - Open delete alert (only your own items)
     // - Open edit modal (only your own items)
-    // - pass the userName
 
     const posts = useSelector(selectPost)
-    console.log(posts)
-
-    //Get posts
-    // useEffect(() => {
-    //     fetch("https://codeleap-test-api.herokuapp.com/posts", {
-    //         method: "GET",
-    //         headers: {
-    //             "Content-type": "application/json",
-    //         }
-    //     })
-    //         .then(resp => resp.json())
-    //         .then(data => setPosts(data))
-    //         .catch(err => console.log(err))
-    // }, [posts])
-
-    // create new post
-    // function createPost(post) {
-    //     fetch("https://codeleap-test-api.herokuapp.com/posts", {
-    //         method: "POST",
-    //         headers: {
-    //             "Content-type": "application/json",
-    //         },
-    //         body: JSON.stringify(post)
-    //     })
-    //         .then(resp => resp.json())
-    //         .then(data => console.log("post created", data))
-    //         .catch(err => console.log(err))
-    // }
 
     return (
         <div className={styles.background}>

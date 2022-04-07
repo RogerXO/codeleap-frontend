@@ -1,36 +1,33 @@
 import styles from './PostForm.module.css'
 
 import { useState } from 'react'
+import { useSelector } from "react-redux"
 import { useDispatch } from 'react-redux'
 
 import { createPost } from '../redux/actions/PostSlice'
+import { selectUserName } from '../redux/actions/UserNameSlice'
 
 function PostForm() {
     const dispatch = useDispatch()
-    const [title, setTitle] = useState()
-    const [comment, setComment] = useState()
-    const [post, setPost] = useState({})
-
+    const [title, setTitle] = useState("")
+    const [comment, setComment] = useState("")
+    const userName = useSelector(selectUserName)
 
     function handleTitle(e) {
         setTitle(e.target.value)
-        setPost({
-            ...post,
-            title: e.target.value
-        })
     }
 
     function handleComment(e) {
         setComment(e.target.value)
-        setPost({
-            ...post,
-            comment: e.target.value
-        })
     }
 
     function submit(e) {
         e.preventDefault()
-        dispatch(createPost(post), { payload: post })
+        dispatch(createPost({
+            userName: userName,
+            title: title,
+            comment: comment
+        }))
         setTitle('')
         setComment('')
     }
